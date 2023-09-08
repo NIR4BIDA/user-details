@@ -1,0 +1,7 @@
+.header{
+    text-align: center;
+    align-items: center;
+    justify-content: up;
+    font-size: calc(40px + 2vmin);
+    color: rgb(0, 0, 0);
+  }

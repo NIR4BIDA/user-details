@@ -1,0 +1,37 @@
+.input-form{
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: up;
+    font-size: calc(10px + 2vmin);
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+  .input-form label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: calc(10px + 2vmin);
+    color: rgb(0, 0, 0);
+  }
+  .input-form input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    justify-content: up;
+    font-size: calc(10px + 2vmin);
+    color: rgb(0, 0, 0);
+  }
+
+  .input-form button {
+    background-color: #cdd6df; /* Button background color */
+    color: #f04c4c; /* Button text color */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Add cursor pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    margin-top: 10px; /* Increase the margin to add more space above the button */
+}
+
+}

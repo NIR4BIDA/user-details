@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from './components/Header/Header'
+import InputForm from './components/InputForm/InputForm'
+import UserList from './components/UsersList/UserList'
+import {useState} from 'react'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [users,setUsers]=useState([]);
+  const addUser=(InputUser) =>
+  {
+      setUsers((prev)=>{
+        return ([InputUser,...prev,]);
+      }
+      );
+  }
+  return(
+    <div>
+    <Header/>
+    <InputForm addUser={addUser}/>
+    {users.length===0?<p style={{textAlign: 'center'}}>There are no registered users.</p>:
+    <UserList users={users}/>
+    }
     </div>
   );
 }
